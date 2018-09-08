@@ -33,22 +33,30 @@ body{
   background-image: url('../img/city.jpg');
   background-size: cover;
   background-position: center bottom;
-  padding: 8em 0; 
+  padding: 7em 0; 
   
 }
-header.masthead {
-  position: relative;
-  overflow: hidden;
-  padding-top: calc(7rem + 72px);
-  padding-bottom: 20rem;
+.bg-img-main{
   background-image: url('../img/img1.jpg');
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-attachment: scroll;
   background-size: cover;
+  background-position: center center;
+  height: 80%;
+  padding: 9em 0;
 }
 
-header.masthead .masthead-content {
-  z-index: 1;
-  position: relative;
+.btn-gray-primary{
+  background-color: rgb(160,160,160);
+}
+
+.icons-font {
+      font-size: 1.8em;
+}
+
+.no-btn{
+  background-color: inherit;
+  border: none;
+}
+
+.card-body{
+  padding: 1rem;
 }
