@@ -1,0 +1,25 @@
+{
+  "name": "hackbbva",
+  "version": "1.0.0",
+  "description": "Proyecto para el hackathon BBVA 2018",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanrey254/bbva-hackathon-CodersLab"
+  },
+  "keywords": [
+    "bbva",
+    "bancomer",
+    "lector",
+    "qr"
+  ],
+  "author": "Equipo CodersLab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanrey254/bbva-hackathon-CodersLab/issues"
+  },
+  "homepage": "https://github.com/sanrey254/bbva-hackathon-CodersLab/src/index.html"
+}
