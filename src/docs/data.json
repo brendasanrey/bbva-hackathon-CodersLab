@@ -1,0 +1,32 @@
+{
+    "ot": "0001",
+    "dOp": [
+        {
+            "alias": "compra dulcería"
+        },
+        {
+            "cl": "01218000458420842"
+        },
+        {
+            "type": "CP"
+        },
+        {
+            "refn": ""
+        },
+        {
+            "refa": ""
+        },
+        {
+            "aumont": "71"
+        },
+        {
+            "bank": "00012"
+        },
+        {
+            "country": "MX"
+        },
+        {
+            "currency": "MXN"
+        }
+    ]
+}
