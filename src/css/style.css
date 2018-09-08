@@ -1,10 +1,39 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .bg-blue{
     background-color: #072146;
 }
+.bg-blue-ligth{
+  background-color: rgb(0,110,193);
+}
 
+.w-40{
+  width: 40%;
+}
+
+.w-80{
+  width: 80%;
+}
+.input-login{
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px #fff solid;
+    width: 90%;
+}
+.input-login::placeholder {
+    color: #fff;
+    opacity: 1; 
+    text-align: center;
+}
+.bg-img{
+  background-image: url('../img/city.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  padding: 8em 0; 
+  
+}
 header.masthead {
   position: relative;
   overflow: hidden;
