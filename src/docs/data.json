@@ -2,22 +2,22 @@
     "ot": "0001",
     "dOp": [
         {
-            "alias": "compra dulcería"
+            "alias": "Pago muebles"
         },
         {
-            "cl": "01218000458420842"
+            "cl": "012180015658835986"
         },
         {
-            "type": "CP"
+            "type": "CL"
         },
         {
             "refn": ""
         },
         {
-            "refa": ""
+            "refa": "PALMIDIA"
         },
         {
-            "aumont": "71"
+            "amount": "1230.00"
         },
         {
             "bank": "00012"
