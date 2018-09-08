@@ -1,0 +1,32 @@
+{
+    "ot": "0001",
+    "dOp": [
+        {
+            "alias": "Pago muebles"
+        },
+        {
+            "cl": "012180015658835986"
+        },
+        {
+            "type": "CL"
+        },
+        {
+            "refn": ""
+        },
+        {
+            "refa": "PALMIDIA"
+        },
+        {
+            "amount": "1230.00"
+        },
+        {
+            "bank": "00012"
+        },
+        {
+            "country": "MX"
+        },
+        {
+            "currency": "MXN"
+        }
+    ]
+}
