@@ -55,7 +55,7 @@ window.verifyAccountWithEmail = () => {
 window.loginUser = (email, password) => {
 	firebase.auth().signInWithEmailAndPassword(email, password)
 		.then(() => {
-			location.href = ('views/newsfeed.html');
+			location.href = ('home.html');
 		})
 		.catch((error) => {
 			// Handle Errors here.
@@ -148,7 +148,7 @@ window.listProducts = () => {
 	dbRef.get()
 		.then(products => {
 			products.forEach(product => {
-				console.log(product.data());
+				drawProduct(product.data());
 			});
 		});
 };
