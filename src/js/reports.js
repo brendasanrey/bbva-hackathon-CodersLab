@@ -16,7 +16,28 @@ firebase.auth().onAuthStateChanged((user) => {
 });
 
 const salesPerDay = () => {
-  const today = new Date();
+  db.collection('sales').get()
+    .then(sales => {
+      drawSalesList(sales);
+    });
 
 }
+
+const drawSalesList = (listOfSales) => {
+  const today = new Date();
+  const dayToday = today.getDate();
+  const monthToday = today.getMonth() + 1;
+  const yearToday = today.getFullYear();
+  const todaysDate = dayToday + '/' + monthToday + '/' + yearToday;
+  let dayTotal = 0;
+  listOfSales.forEach(sale => {
+    if (todaysDate === sale.data().date) {
+      document.getElementById('listOfSales').innerHTML += `<li class="list-group-item">
+      <b>${sale.id}</b>
+      <p>$ ${sale.data().total}</p>
+    </li>`;
+    }
+  });
+};
+
 salesPerDay();

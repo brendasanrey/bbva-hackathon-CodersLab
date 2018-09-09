@@ -30,10 +30,14 @@ document.getElementById('transactionCompleted').addEventListener('click', event 
       });
   });
   const time = new Date();
+  const day = time.getDate();
+  const month = time.getMonth() + 1;
+  const year = time.getFullYear();
+  const actualDate = day + '/' + month + '/' + year;
   db.collection('sales').add({
     products: cartListElements,
     total: totalPrice,
-    date: time
+    date: actualDate
   }).then((docRef) => {
     console.log("Document written with ID: ", docRef.id);
   })
