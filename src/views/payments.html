@@ -14,25 +14,23 @@
 </head>
 
 <body class="bg-blue">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
-    <a class="navbar-brand" href="home.html">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-blue fixed-top">
+    <a class="navbar-brand" href="qrCode.html">
       <img src="../img/logo.svg" width="150">
     </a>
     <div class="form-inline ml-auto mr-md-4">
-      <i class="fas fa-shopping-cart mr-3 text-white"></i>
-      <i class="fas fa-search text-white" id="searching-btn"></i>
+      <i class="fas fa-shopping-cart mr-3 text-white" id="summaryList"></i>
+      <i class="fas fa-search text-white"></i>
     </div>
   </nav>
   <nav class="nav text-white mt-2 ml-5" id="search-nav">
     <input type="text" placeholder="Buscar..." class="mt-2 text-white mx-auto input-login">
   </nav>
   <div class="container-fluid">
-    <div class="row mt-3">
-      <div class="col-12 col-sm-4 col-md-3" id="listOfProducts">
-      </div>
+    <div class="row mt-5" id="listOfProducts">
     </div>
   </div>
-    <a class='float' href='#'><button class="btn btn-primary px-4">Cobrar</button></a>  
+  </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
