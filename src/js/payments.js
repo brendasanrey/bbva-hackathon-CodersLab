@@ -22,12 +22,12 @@ const drawProduct = (id, product) => {
   const list = document.getElementById('listOfProducts');
   list.innerHTML += `<div class="col-12 col-sm-4 col-md-3 mt-3">
     <div class="card mb-4">
-    <img class="card-img-top" src="${product.image}" alt="img">
-    <div class="card-body">
+    <img  src="${product.image}" alt="img" height="250">
+    <div class="card-body mx-auto text-center">
         <h5 class="card-title">${product.name}</h5>
-        <span>${product.price}</span>
+        <span>$${product.price}.00</span>
     </div>
-    <div class="card-body">
+    <div class="card-body mx-auto">
         <button class="btn no-btn" onclick="addToCart('${id}', '${product.price}')"><i class="fas fa-plus-circle"></i> Agregar</button>
         <button class="btn no-btn"><i class="fas fa-info-circle"></i> Detalles</button>
     </div>
