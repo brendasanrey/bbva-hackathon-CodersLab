@@ -11,20 +11,22 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 </head>
 
 <body class="bg-blue">
   <nav class="navbar navbar-expand-lg navbar-dark bg-blue fixed-top">
-    <a class="navbar-brand" href="qrCode.html">
+    <a class="navbar-brand" href="home.html">
       <img src="../img/logo.svg" width="150">
     </a>
     <div class="form-inline ml-auto mr-md-4">
-      <i class="fas fa-shopping-cart mr-3 text-white" id="summaryList"></i>
-      <i class="fas fa-search text-white"></i>
+      <i class="fas fa-shopping-cart mr-3 text-white btn-pointer" id="summaryList"> <span id="counter" class="text-white">0</span></i>
+      <i class="fas fa-search text-white btn-pointer" id="searching-btn"></i>
+      <i class="fas fa-power-off text-white btn-pointer ml-3" onclick="signOutUser()"></i>
     </div>
   </nav>
-  <nav class="nav text-white mt-2 ml-5" id="search-nav">
-    <input type="text" placeholder="Buscar..." class="mt-2 text-white mx-auto input-login">
+  <nav class=" bg-blue nav text-white mt-5 fixed-top" id="search-nav">
+    <input type="text" placeholder="Buscar..." class="w-100 mt-2 text-white mx-auto input-login">
   </nav>
   <div class="container-fluid">
     <div class="row mt-5" id="listOfProducts">

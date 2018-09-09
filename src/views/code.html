@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -19,14 +20,16 @@
       <img src="../img/logo.svg" width="150">
     </a>
     <div class="form-inline ml-auto mr-md-4">
-      <i class="fas fa-search text-white"></i>
+      <i class="fas fa-power-off text-white btn-pointer" onclick="signOutUser()"></i>
     </div>
     </div>
   </nav>
   <div class="container">
     <div class="row text-center h-100v justify-content-center align-items-center">
-      <img id="code">
-      <button class="btn btn-primary" id="transactionCompleted"> Finalizar venta</button>
+      <div class="col-12">
+        <img id="code">
+        <p class="mt-4"><button class="btn btn-primary" id="transactionCompleted"> Finalizar venta</button></p>
+      </div>
     </div>
   </div>
 
