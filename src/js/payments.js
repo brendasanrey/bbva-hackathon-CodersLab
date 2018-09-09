@@ -46,6 +46,7 @@ const addToCart = (product, price) => {
   cart.push(product);
   const priceNumber = parseInt(price);
   total = total + priceNumber;
+  document.getElementById('counter').innerHTML = ` ${cart.length}`;
 }
 
 listProducts();

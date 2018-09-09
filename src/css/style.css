@@ -73,3 +73,7 @@ body{
 .card-body{
   padding: 1rem;
 }
+
+.btn-pointer{
+  cursor: pointer;
+}
