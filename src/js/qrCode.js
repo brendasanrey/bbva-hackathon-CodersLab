@@ -8,7 +8,7 @@ window.getData = () =>{
 
 window.drawQrCode = (result) =>{ 
     const resultToString = JSON.stringify(result);
-    const url =`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${resultToString}`;
+    const url =`https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${resultToString}`;
     console.log(url); 
     document.getElementById('code').src = url;
 }
