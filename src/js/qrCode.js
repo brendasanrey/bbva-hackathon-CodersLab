@@ -29,10 +29,11 @@ document.getElementById('transactionCompleted').addEventListener('click', event 
         leftQuantity = leftQuantity - 1;
       });
   });
+  const time = new Date();
   db.collection('sales').add({
     products: cartListElements,
     total: totalPrice,
-    date: new Date()
+    date: time
   }).then((docRef) => {
     console.log("Document written with ID: ", docRef.id);
   })
@@ -41,5 +42,13 @@ document.getElementById('transactionCompleted').addEventListener('click', event 
     });
   localStorage.removeItem('cart');
   localStorage.removeItem('total');
-  location.href = ('home.html');
+  swal({
+    title: "Venta Exitosa",
+    text: "Grandioso",
+    icon: "success",
+    button: "Ok!",
+  })
+    .then(() => {
+      location.href = ('home.html');
+    });
 });
