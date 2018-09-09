@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>BLOOM</title>
+  <title>BLOOM Login</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
@@ -26,12 +26,12 @@
     <div class="row mt-3">
       <div class="offset-md-2 col-md-8 col-12 text-center">
         <h3 class="text-white">Hola</h3>
-        <input type="email" placeholder="Usuario" class="my-3 text-white input-login">
-        <input type="password" placeholder="Contraseña" class="my-3 text-white input-login">
+        <input type="email" placeholder="Email" class="my-3 text-white input-login" id="email-field">
+        <input type="password" placeholder="Contraseña" class="my-3 text-white input-login" id="password-field">
         <button class="btn bg-blue-ligth text-white px-5 mt-2" id="login-button">Enviar</button>
         <p class="text-white text-center mt-2"><a href="forgotPassword.html">Olvidé mi contraseña</a></p>
-        <a class="btn btn-block btn-social btn-google text-white w-80 mx-auto text-center mb-md-4 mb-1">
-          <i class="fab fa-google" id="google-sign-in"></i> Ingresar con Google
+        <a class="btn btn-block btn-social btn-google text-white w-80 mx-auto text-center mb-md-4 mb-1" id="google-sign-in">
+          <i class="fab fa-google"></i> Ingresar con Google
         </a>
       </div>
     </div>
@@ -41,6 +41,7 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
   <script src="../js/index.js"></script>
   <script src="../js/login.js"></script>
 </body>
