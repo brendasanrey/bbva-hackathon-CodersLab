@@ -180,19 +180,7 @@ window.searchProduct = (search) => {
         const upperCategory = product.data().category.toUpperCase();
         const searchResult = upperCategory.indexOf(upperSearch);
         if (searchResult !== -1) {
-          console.log(product.data());
-        } else {
-          const upperName = product.data().name.toUpperCase();
-          const searchResult = upperName.indexOf(upperSearch);
-          if (searchResult !== -1) {
-            console.log(product.data());
-          } else {
-            const upperPrice = product.data().price.toUpperCase();
-            const searchResult = upperPrice.indexOf(upperSearch);
-            if (searchResult !== -1) {
-              console.log(product.data());
-            }
-          }
+          listSearch(product.data());
         }
       })
     })
