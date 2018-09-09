@@ -7,6 +7,8 @@ firebase.auth().onAuthStateChanged((user) => {
         let photoURL = user.photoURL;
         let uid = user.uid;
         let providerData = user.providerData;
+
+        location.href = ('home.html');
     } else {
         // User is signOut.
     }
