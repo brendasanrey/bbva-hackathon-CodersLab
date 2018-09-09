@@ -51,3 +51,9 @@ const addToCart = (product, price) => {
 listProducts();
 
 
+document.getElementById('searchInput').addEventListener('keypress', event => {
+  const keycode = event.keyCode;
+  if (keycode === 13) {
+    console.log('enter');
+  }
+})
