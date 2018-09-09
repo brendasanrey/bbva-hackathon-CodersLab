@@ -15,21 +15,24 @@ firebase.auth().onAuthStateChanged((user) => {
     }
 });
 
-const drawProduct = (product) => {
+
+
+const drawProduct = (id, product) => {
     const list = document.getElementById('listOfProducts');
-    list.innerHTML += `<div class="card mb-4">
+    list.innerHTML += `<div class="col-12 col-sm-4 col-md-3 mt-3">
+    <div class="card mb-4">
     <img class="card-img-top" src="https://dummyimage.com/500x300/000000/fff" alt="Card image cap">
     <div class="card-body">
         <h5 class="card-title">${product.name}</h5>
         <span>${product.price}</span>
     </div>
     <div class="card-body">
-        <button class="btn no-btn"><i class="fas fa-plus-circle"></i> Agregar</button>
+        <button class="btn no-btn" onclick="addToCart('${id}')"><i class="fas fa-plus-circle"></i> Agregar</button>
         <button class="btn no-btn"><i class="fas fa-info-circle"></i> Detalles</button>
     </div>
+</div>
 </div>`;
 }
 
 listProducts();
-
 
