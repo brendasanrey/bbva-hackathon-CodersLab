@@ -22,7 +22,7 @@ const drawProduct = (id, product) => {
   const list = document.getElementById('listOfProducts');
   list.innerHTML += `<div class="col-12 col-sm-4 col-md-3 mt-3">
     <div class="card mb-4">
-    <img class="card-img-top" src="https://dummyimage.com/500x300/000000/fff" alt="Card image cap">
+    <img class="card-img-top" src="${product.image}" alt="img">
     <div class="card-body">
         <h5 class="card-title">${product.name}</h5>
         <span>${product.price}</span>
